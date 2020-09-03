@@ -22,7 +22,10 @@ VScode - Code editor.
 [Terminal] - command line user interface for the bash shell.Used the program that ships with Mac OS "Catalina".​le 
 
 # Screenshots
-
+![](imaages\Screenshot1)
+![](images\Screenshot2)
+![](Images\Screenshot3)
+![](imaages\Screenshot4)
 
 
 
