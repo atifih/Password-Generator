@@ -1,48 +1,42 @@
-# 03 JavaScript: Password Generator
+# Password Generator
+Crreating an application that generates a random password based on user-selected criteria. This app runs  in the browser and features dynamically updated HTML and CSS along with JavaScript code. It will also features responsive design  and hence can be viewed on different sceeen sizes.
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+# Contents
+The app is composed of 4 files on a rendering a single web page. The files associated with  the web page are as follows:
+e end
 
-## User Story
+index.html
+Assets/ArraysList.js
+script.js
+style.css
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
 
-## Acceptance Criteria
+# User Story
+An employee with access to sensitive data wants  to randomly generate a password that meets certain user specified  criteria.It helps the user to  create a strong password that provides greater security.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Built With. people.
 
-The following image demonstrates the application functionality:
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+VScode - Code editor.
+[Terminal] - command line user interface for the bash shell.Used the program that ships with Mac OS "Catalina".​le 
 
-## Review
+# Screenshots
 
-You are required to submit the following for review:
 
-* The URL of the deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+# Licence
+MIT License.
+
+Link to the App
+https://github.com/atifih/Password-Generator
+
+# Authors
+Haque, Atif
+
+# Contact information
+atif.haque@gmail.com
+
+# Acknowledgments
+My instructor and TAs at the Bootcamp.
