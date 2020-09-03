@@ -29,8 +29,6 @@
         </div>
       </div>
     </div>
-    <script src="../Assets/ArraysList.js"></script>
     <script src="script.js"></script>
-
   </body>
 </html>
