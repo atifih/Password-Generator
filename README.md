@@ -3,12 +3,12 @@ Crreating an application that generates a random password based on user-selected
 
 
 # Contents
-The app is composed of 4 files on a rendering a single web page. The files associated with  the web page are as follows:
+The app is composed of 4 files rendering a single web page. The files associated with  the web page are as follows:
 e end
 
-index.html
-Assets/ArraysList.js
-script.js
+index.html 
+Assets/ArraysList.js 
+script.js 
 style.css
 
 
