@@ -64,98 +64,53 @@ function generatePassword() {
   var tempArray2 = [];
   var tempArray = [];
   var potentialchars = [];
-  var potential = []; 
+  var potential = [];
 
   if (userOptions.upper) {
     // Append generated uppercase character to end of generated password.
     potentialchars = potentialchars.concat(upperCasedCharacters);
     console.log(upperCasedCharacters);
-
-    // var randIndex = Math.floor(Math.random() * upperCasedCharacters.length);
- //  potentialchars += upperCasedCharacters;
-
-
-    if (userOptions.lower) {
-      // Append generated lowercase character to end of generated password.
-    
-      potentialchars = potentialchars.concat(lowerCasedCharacters);
-    }
-
-    if (userOptions.number) {
-      // Append generated number character to end of generated password.
-      // potentialchars += numericCharacters;
-      potentialchars = potentialchars.concat(numericCharacters);
-    }
-    if (userOptions.special) {
-      //Append generated number character to end of generated password.
-      potentialchars = potentialchars.concat(specialCharacters);
-    }
-
-
-    /*
-    if (userOptions.upper && userOptions.lower){
-      
-      tempArray1  += upperCasedCharacters[(Math.floor(Math.random() * upperCasedCharacters.length))];
-      tempArray2  += lowerCasedCharacters[(Math.floor(Math.random() * lowerCasedCharacters.length))];
-      tempArray = tempArray1 + tempArray2;
-      passwordArray += tempArray[(Math.floor(Math.random() * tempArray.length))];
-    }
-    */
-
-    // Loop the array
-    for (var i = 0; i < userOptions.pLength; i++) {
-
-      console.log("password length in for loop: pLength = ", userOptions.pLength);
-
-      /*
-        if (userOptions.upper){
-        // Append generated uppercase character to end of generated password.
-           console.log(upperCasedCharacters);
-    
-            // var randIndex = Math.floor(Math.random() * upperCasedCharacters.length);
-            passwordArray  += upperCasedCharacters[(Math.floor(Math.random() * upperCasedCharacters.length))];
-          
-         
-         if  (userOptions.lower){
-         // Append generated lowercase character to end of generated password.
-        passwordArray  += lowerCasedCharacters[(Math.floor(Math.random() * lowerCasedCharacters.length))];
-         
-      }
-      
-      if  (userOptions.number){
-        // Append generated number character to end of generated password.
-        passwordArray += numericCharacters[(Math.floor(Math.random() * numericCharacters.length))];
-      }
-       if (userOptions.special){
-        //Append generated number character to end of generated password.
-       passwordArray += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-        console.log("Password (special) is : ", passwordArray);
-      }
-     /*
-      if (userOptions.upper && userOptions.lower){
-        
-        tempArray1  += upperCasedCharacters[(Math.floor(Math.random() * upperCasedCharacters.length))];
-        tempArray2  += lowerCasedCharacters[(Math.floor(Math.random() * lowerCasedCharacters.length))];
-        tempArray = tempArray1 + tempArray2;
-        passwordArray += tempArray[(Math.floor(Math.random() * tempArray.length))];
-      }
-      */
-
-
-      passwordArray = passwordArray.concat(potentialchars[(Math.floor(Math.random() * potentialchars.length))]);
-
-
-
-      console.log("For loop counter var:", i);
-
-    } // end-for loop
-    console.log("Password generated is: ", passwordArray);
-    //alert (passwordArray);
-
-    return passwordArray.join("");
   }
 
+
+
+  if (userOptions.lower) {
+    // Append generated lowercase character to end of generated password.
+
+    potentialchars = potentialchars.concat(lowerCasedCharacters);
+  }
+
+  if (userOptions.number) {
+    // Append generated number character to end of generated password.
+    // potentialchars += numericCharacters;
+    potentialchars = potentialchars.concat(numericCharacters);
+  }
+  if (userOptions.special) {
+    //Append generated number character to end of generated password.
+    potentialchars = potentialchars.concat(specialCharacters);
+  }
+
+
+
+  // Loop the array
+  for (var i = 0; i < userOptions.pLength; i++) {
+
+    console.log("password length in for loop: pLength = ", userOptions.pLength);
+
+    passwordArray = passwordArray.concat(potentialchars[(Math.floor(Math.random() * potentialchars.length))]);
+
+
+
+    console.log("For loop counter var:", i);
+
+  } // end-for loop
+  console.log("Password generated is: ", passwordArray);
+  //alert (passwordArray);
+
+  return passwordArray.join("");
 }
+
+
 
 
 
