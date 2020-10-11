@@ -33,7 +33,7 @@ VScode - Code editor.
 MIT License.
 
 Link to the App
-https://github.com/atifih/Password-Generator
+ https://atifih.github.io/Password-Generator/
 
 # Authors
 Haque, Atif
